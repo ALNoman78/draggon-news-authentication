@@ -1,8 +1,10 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter, Link, Navigate } from "react-router-dom";
 import HomeLayout from "../layouts/HomeLayout";
 import CategoryNews from "../pages/CategoryNews";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
+import Register from "../pages/Register";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -36,14 +38,20 @@ const router = createBrowserRouter([
         element: <Login></Login>
       },
       {
-        path:'/auth/register',
-        element: <h2>Register</h2>
+        path: '/auth/register',
+        element: <Register></Register>
       }
     ]
   },
   {
+    path: '/career',
+    element: <div>
+      <h3 className="flex items-center justify-center min-h-screen font-bold text-2xl">As soon as possible this section will be updated </h3>
+    </div>
+  },
+  {
     path: "*",
-    element: <h1>Error</h1>,
+    element: <ErrorPage></ErrorPage>
   },
 ]);
 
