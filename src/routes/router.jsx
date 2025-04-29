@@ -29,6 +29,7 @@ const router = createBrowserRouter([
     path: "/news",
     element: <h1>News Layout</h1>,
   },
+  // set some new route and here i use same of Outlet 
   {
     path: "auth",
     element: <AuthLayout></AuthLayout>,
