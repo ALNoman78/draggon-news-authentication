@@ -16,15 +16,15 @@ const LeftNavbar = () => {
 
   return (
     <div>
-      <h2 className="font-semibold mb-3">All Caterogy ({categories.length})</h2>
+      <h2 className="font-semibold mb-3">All Category ({categories.length})</h2>
       <div className="flex flex-col gap-2 ">
-        {categories.map((category) => (
+        {categories.map((items) => (
           <NavLink
-            to={`/category/${category.category_id}`}
+            to={`/category/${items.category_id}`}
             className="btn bg-base-100 border-none"
-            key={category.category_id}
+            key={items.category_id}
           >
-            {category.category_name}
+            {items.category_name}
           </NavLink>
         ))}
       </div>

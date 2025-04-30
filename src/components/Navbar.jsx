@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center">
       <div className="">
         {
-          user.name
+          user && user.name
         }
       </div>
       <div className="nav space-x-5">
