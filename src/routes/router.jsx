@@ -1,4 +1,4 @@
-import { createBrowserRouter, Link, Navigate } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import HomeLayout from "../layouts/HomeLayout";
 import CategoryNews from "../pages/CategoryNews";
 import AuthLayout from "../layouts/AuthLayout";
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
           ),
       },
     ],
+    // personal layout category
   },
   {
     path: "/news",
